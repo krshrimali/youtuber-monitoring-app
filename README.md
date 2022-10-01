@@ -15,4 +15,4 @@ and more...
 
 Fill the JSON with the data, and auto-generate the HTML.
 
-<img src="github/ScreenShot.png" width="400px" height="400px"/>
+<img src="github/ScreenShot.png" height="400px"/>
