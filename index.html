@@ -1,0 +1,111 @@
+<html>
+
+<head>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+
+    .grid-container>div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+
+    .card {
+      /* Add shadows to create the "card" effect */
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    /* Add some padding inside the card container */
+    .container {
+      padding: 2px 16px;
+    }
+
+    @-webkit-keyframes pop-on-hover {
+      50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes pop-on-hover {
+      50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    }
+
+    .pop-on-hover {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    }
+
+    .pop-on-hover:hover,
+    .pop-on-hover:focus,
+    .pop-on-hover:active {
+      -webkit-animation-name: pop-on-hover;
+      animation-name: pop-on-hover;
+      -webkit-animation-duration: 0.3s;
+      animation-duration: 0.3s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+  </style>
+</head>
+
+<body><div class="grid-container">
+<div class="card pop-on-hover">
+<img src="https://www.w3schools.com/howto/img_avatar.png" alt="kushashwaraviShrimali" style="width:100% height:10%">
+<div class="container">
+    <h4><b>kushashwaraviShrimali</b></h4>
+    <p>He does something...</p>
+    <p>747</p>
+</div>
+</div>
+
+<div class="card pop-on-hover">
+<img src="https://www.w3schools.com/howto/img_avatar.png" alt="mohitWankhade" style="width:100% height:10%">
+<div class="container">
+    <h4><b>mohitWankhade</b></h4>
+    <p>He does something...</p>
+    <p>7400</p>
+</div>
+</div>
+
+<div class="card pop-on-hover">
+<img src="https://www.w3schools.com/howto/img_avatar.png" alt="atulKumar" style="width:100% height:10%">
+<div class="container">
+    <h4><b>atulKumar</b></h4>
+    <p>He does something...</p>
+    <p>74000</p>
+</div>
+</div>
+
+<div class="card pop-on-hover">
+<img src="https://www.w3schools.com/howto/img_avatar.png" alt="mazharRajani" style="width:100% height:10%">
+<div class="container">
+    <h4><b>mazharRajani</b></h4>
+    <p>He does something...</p>
+    <p>10000000</p>
+</div>
+</div>
+</div></body>
+</html>
