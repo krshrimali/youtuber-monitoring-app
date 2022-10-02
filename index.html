@@ -35,6 +35,14 @@
       position: relative;
     }
 
+    .card-not-live {
+      filter: saturate(10%);
+    }
+
+    .card-live {
+      filter: saturate(1);
+    }
+
     /* On mouse-over, add a deeper shadow */
     .card:hover {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
@@ -94,7 +102,7 @@
   </style>
 </head>
 <body><div class="grid-container">
-<div class="card pop-on-hover">
+<div class="card pop-on-hover card-live">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="kushashwaraviShrimali" style="width:100% height:10%">
 <img src="live.png" class="live-overlay">
 <div class="container live-status-true">
@@ -104,7 +112,7 @@
 </div>
 </div>
 
-<div class="card pop-on-hover">
+<div class="card pop-on-hover card-not-live">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="mohitWankhade" style="width:100% height:10%">
 <img src="live.png" class="not-live-overlay">
 <div class="container live-status-false">
@@ -114,7 +122,7 @@
 </div>
 </div>
 
-<div class="card pop-on-hover">
+<div class="card pop-on-hover card-live">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="atulKumar" style="width:100% height:10%">
 <img src="live.png" class="live-overlay">
 <div class="container live-status-true">
@@ -124,7 +132,7 @@
 </div>
 </div>
 
-<div class="card pop-on-hover">
+<div class="card pop-on-hover card-not-live">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="mazharRajani" style="width:100% height:10%">
 <img src="live.png" class="not-live-overlay">
 <div class="container live-status-false">
@@ -134,7 +142,7 @@
 </div>
 </div>
 
-<div class="card pop-on-hover">
+<div class="card pop-on-hover card-live">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="yatharthWankhade" style="width:100% height:10%">
 <img src="live.png" class="live-overlay">
 <div class="container live-status-true">
@@ -144,7 +152,7 @@
 </div>
 </div>
 
-<div class="card pop-on-hover">
+<div class="card pop-on-hover card-not-live">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="AK614" style="width:100% height:10%">
 <img src="live.png" class="not-live-overlay">
 <div class="container live-status-false">

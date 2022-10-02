@@ -24,13 +24,16 @@ def write_json(data: dict, json_path: str):
 
 def autogenerate_div(userName: str, data: dict):
     if data["is_live"] == "true":
+        brightness_class_name = "card-live"
         class_name = "live-status-true"
         overlay_class_name = "live-overlay"
     else:
+        brightness_class_name = "card-not-live"
         class_name = "live-status-false"
         overlay_class_name = "not-live-overlay"
 
     div = div_template.format(
+        brightness_class_name,
         data["img_avatar_link"],
         userName,
         overlay_class_name,
