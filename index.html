@@ -4,9 +4,10 @@
   <style>
     .grid-container {
       display: grid;
-      grid-template-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto;
       gap: 10px;
-      background-color: #2196F3;
+      /* background-color: #2196F3; */
+      background-color: rgba(255, 0, 0, 0.8);
       padding: 10px;
     }
 
@@ -17,11 +18,21 @@
       font-size: 30px;
     }
 
+    .live-status-true {
+      background-color: rgba(0, 255, 0, 0.8);
+    }
+
+    .live-status-false {
+      background-color: rgba(0, 255, 255, 0.8);
+    }
+
     .card {
       /* Add shadows to create the "card" effect */
+      background-color: rgba(255, 0, 0, 0.8);
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       border-radius: 10px;
       transition: 0.3s;
+      position: relative;
     }
 
     /* On mouse-over, add a deeper shadow */
@@ -32,6 +43,18 @@
     /* Add some padding inside the card container */
     .container {
       padding: 2px 16px;
+    }
+
+    .live-overlay {
+      width: 15%;
+      height: 15%;
+      top: 0;
+      right: 10;
+      position: absolute;
+    }
+
+    .not-live-overlay {
+      display: none;
     }
 
     @-webkit-keyframes pop-on-hover {
@@ -70,11 +93,11 @@
     }
   </style>
 </head>
-
 <body><div class="grid-container">
 <div class="card pop-on-hover">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="kushashwaraviShrimali" style="width:100% height:10%">
-<div class="container">
+<img src="live.png" class="live-overlay">
+<div class="container live-status-true">
     <h4><b>kushashwaraviShrimali</b></h4>
     <p>He does something...</p>
     <p>747</p>
@@ -83,7 +106,8 @@
 
 <div class="card pop-on-hover">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="mohitWankhade" style="width:100% height:10%">
-<div class="container">
+<img src="live.png" class="live-overlay">
+<div class="container live-status-true">
     <h4><b>mohitWankhade</b></h4>
     <p>He does something...</p>
     <p>7400</p>
@@ -92,7 +116,8 @@
 
 <div class="card pop-on-hover">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="atulKumar" style="width:100% height:10%">
-<div class="container">
+<img src="live.png" class="live-overlay">
+<div class="container live-status-true">
     <h4><b>atulKumar</b></h4>
     <p>He does something...</p>
     <p>74000</p>
@@ -101,10 +126,31 @@
 
 <div class="card pop-on-hover">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="mazharRajani" style="width:100% height:10%">
-<div class="container">
+<img src="live.png" class="not-live-overlay">
+<div class="container live-status-false">
     <h4><b>mazharRajani</b></h4>
     <p>He does something...</p>
     <p>10000000</p>
+</div>
+</div>
+
+<div class="card pop-on-hover">
+<img src="https://www.w3schools.com/howto/img_avatar.png" alt="yatharthWankhade" style="width:100% height:10%">
+<img src="live.png" class="not-live-overlay">
+<div class="container live-status-false">
+    <h4><b>yatharthWankhade</b></h4>
+    <p>He does something...</p>
+    <p>2</p>
+</div>
+</div>
+
+<div class="card pop-on-hover">
+<img src="https://www.w3schools.com/howto/img_avatar.png" alt="AK614" style="width:100% height:10%">
+<img src="live.png" class="not-live-overlay">
+<div class="container live-status-false">
+    <h4><b>AK614</b></h4>
+    <p>He does something...</p>
+    <p>100</p>
 </div>
 </div>
 </div></body>

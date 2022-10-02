@@ -23,34 +23,49 @@ def write_json(data: dict, json_path: str):
 
 
 def autogenerate_div(userName: str, data: dict):
+    if data["is_live"] == "true":
+        class_name = "live-status-true"
+        overlay_class_name = "live-overlay"
+    else:
+        class_name = "live-status-false"
+        overlay_class_name = "not-live-overlay"
+
     div = div_template.format(
-        data["img_avatar_link"], userName, userName, data["description"], data["subscribers"]
+        data["img_avatar_link"],
+        userName,
+        overlay_class_name,
+        class_name,
+        userName,
+        data["description"],
+        data["subscribers"],
     )
+
     return div
+
 
 def get_inside_body(inside_body: str):
     return "<body>" + inside_body + "</body>\n"
 
 
 def remove_body_if_it_exists(html_path: str):
-    with open(html_path, 'r') as html_file:
+    with open(html_path, "r") as html_file:
         lines = html_file.readlines()
 
     body_start_idx = -1
     for idx, line in enumerate(lines):
-        if '<body>' in line:
+        if "<body>" in line:
             body_start_idx = idx
 
     if body_start_idx != -1:
-        with open(html_path, 'w+') as html_file:
+        with open(html_path, "w+") as html_file:
             html_file.write("".join(lines[:body_start_idx]))
 
 
 def write_to_html(html_path: str, data: str):
     remove_body_if_it_exists(html_path)
-    with open(html_path, 'a') as html_file:
+    with open(html_path, "a") as html_file:
         html_file.write(data)
-        html_file.write('</html>')
+        html_file.write("</html>")
 
 
 if __name__ == "__main__":
