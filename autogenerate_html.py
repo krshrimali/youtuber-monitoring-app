@@ -72,7 +72,7 @@ def write_to_html(html_path: str, data: str):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 2:
+    if len(sys.argv) >= 2:
         json_path = sys.argv[1]
     else:
         json_path = "list_users.json"
@@ -84,6 +84,6 @@ if __name__ == "__main__":
     div += "</div>"
 
     body = get_inside_body(div)
-    print("This is the output body:\n ", body)
+    # print("This is the output body:\n ", body)
 
     write_to_html("index.html", body)
