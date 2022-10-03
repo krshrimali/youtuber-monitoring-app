@@ -1,0 +1,24 @@
+{
+  "name": "youtube-monitoring-app",
+  "version": "0.0.1",
+  "description": "YouTube Monitoring App: Monitor your YT subscribers",
+  "main": "main.js",
+  "scripts": {
+    "start": "python3 autogenerate_html.py && electron ."
+  },
+  "repository": "https://github.com/krshrimali/youtube-monitoring-app",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo",
+    "youtube",
+    "auto-generate html"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^20.2.0"
+  }
+}
