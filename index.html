@@ -100,7 +100,14 @@
       animation-iteration-count: 1;
     }
   </style>
+  <script>
+    window.$ = window.jquery = require("jquery");
+    window.popper = require("popper.js");
+    require("bootstrap");
+    require("./renderer.js");
+  </script>
 </head>
+
 <body><div class="grid-container">
 <div class="card pop-on-hover card-live">
 <img src="https://www.w3schools.com/howto/img_avatar.png" alt="kushashwaraviShrimali" style="width:100% height:10%">
@@ -149,16 +156,6 @@
     <h4><b>yatharthWankhade</b></h4>
     <p>He does something...</p>
     <p>2</p>
-</div>
-</div>
-
-<div class="card pop-on-hover card-not-live">
-<img src="https://www.w3schools.com/howto/img_avatar.png" alt="AK614" style="width:100% height:10%">
-<img src="live.png" class="not-live-overlay">
-<div class="container live-status-false">
-    <h4><b>AK614</b></h4>
-    <p>He does something...</p>
-    <p>100</p>
 </div>
 </div>
 </div></body>

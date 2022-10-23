@@ -1,0 +1,29 @@
+{
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "python3 autogenerate_html.py && electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^21.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "electron-reload": "^1.2.5",
+    "jquery": "^3.4.0",
+    "popper.js": "^1.14.4",
+    "react-alert": "^7.0.3"
+  }
+}
