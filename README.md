@@ -1,5 +1,7 @@
 ## YouTube Monitoring App
 
+**NOTE:** A rust version of this app is in active development [here](https://github.com/krshrimali/YouTube-Monitoring-App-Rust-Iced).
+
 **Goals:**
 
 1. Have an app which gives you an option to select your favorite streamers.
